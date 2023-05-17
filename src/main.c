@@ -117,12 +117,12 @@ int lsh_ls(char **args){
 
 int lsh_pwd(char **args){
     char wd[1000];
-    printf("Current working directory: %s", getcwd(wd, sizeof(wd)));
+    printf("Current working directory: %s \n", getcwd(wd, sizeof(wd)));
 }
 
 int lsh_sleep(char **args){
 	sleep(5);
-	printf("Hello there, I was sleeping for 5 seconds!");
+	printf("Hello there, I was sleeping for 5 seconds! \n");
 	return 1;
 }
 /**
